@@ -1,14 +1,14 @@
 <template>
     <div class="wrapper">
         <nav class="navbar">
-            <img src="@/assets/logo.png" alt="" class="logo">
+            <img src="@/assets/logo.png" alt="" class="logo" @click="$router.push('/')">
             <ul class="items">
                 <li class="item" @click="scrollTo('phanesNetwork')">Phanes Network</li>
                 <li class="item" @click="scrollTo('governance')">Governance</li>
                 <li class="item" @click="scrollTo('docs')">Docs</li>
                 <li class="item" @click="scrollTo('faqs')">FAQ</li>
             </ul>
-            <button class="launch-btn">Launch App</button>
+            <a class="launch-btn" href="" target="_blank">Launch App</a>
         </nav>
     </div>
 </template>
@@ -46,6 +46,7 @@ export default {
         padding: 25px 24px;
     }
     .logo{
+        cursor: pointer;
         width: 130px;
         @media only screen and (max-width:980px){
             width: 100px;
@@ -91,6 +92,7 @@ export default {
     }
 
     .launch-btn{
+        text-decoration: none;
         border: none;
         outline: none;
         width: 159px;
@@ -104,6 +106,7 @@ export default {
         font-size: 18px;
         color: #FFFFFF;
         cursor: pointer;
+        
         @media only screen and (max-width:980px){
             width: 120px;
             height: 36px;

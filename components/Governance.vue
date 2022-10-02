@@ -1,9 +1,9 @@
 <template>
-  <div class="wrapper">
+  <div>
     <div id="governance">
       <h2 class="heading">Governed by the community</h2>
       <p class="snippet">Phanes is a fully decentralized, community governed protocol with 120,121 token holders.</p>
-      <button class="governance-btn">Governance</button>
+      <button class="governance-btn"><a href="https://guild.xyz/phanes-network" target="_blank">Governance</a></button>
     </div>
     <div class="faas-saas">
       <img src="@/assets/faasbg.png" class="bg" alt="">
@@ -79,6 +79,10 @@ export default {
     font-weight: 700;
     font-size: 20px;
     color: #FFFFFF;
+    a{
+      text-decoration: none;
+      color: #ffff;
+    }
   }
 }
 .faas-saas{
